@@ -1,0 +1,50 @@
+{
+  "tasks": [
+    {
+      "type": "cppbuild",
+      "label": "C/C++: g++.exe build project",
+      "command": "g++.exe",
+      "args": [
+        "-g",
+        "${workspaceFolder}\\src\\base.cpp",
+        "${workspaceFolder}\\src\\clhandler.cpp",
+        "-I${workspaceFolder}\\include",
+        "-I${workspaceFolder}\\lib\\gcc_lib\\mswu",
+        "-L${workspaceFolder}\\lib\\gcc_lib",
+        "-Lc:\\Program Files\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\x86_64-w64-mingw32\\lib",
+        "-mwindows",
+        "-static",
+        "-o",
+        "${workspaceFolder}\\dist\\HoloClipper-GUI.exe",
+        "-lwxmsw31u_core",
+        "-lwxbase31u",
+        "-lwxpng",
+        "-lcomdlg32",
+        "-lgdi32",
+        "-lcomctl32",
+        "-lole32",
+        "-loleaut32",
+        "-ldmoguids",
+        "-luuid",
+        "-lwinspool",
+        "-lz",
+        "-lwxregexu",
+        "-lwxzlib",
+        "-luxtheme",
+        "-loleacc",
+        "-lshlwapi",
+        "-lversion"
+      ],
+      "options": {
+        "cwd": "${fileDirname}"
+      },
+      "problemMatcher": ["$gcc"],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "detail": "compiler: C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/g++.exe"
+    }
+  ],
+  "version": "2.0.0"
+}
